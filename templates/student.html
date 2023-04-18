@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>django forms</title>
+</head>
+<body>
+    <center>
+        <h1> Django StudentForm</h1>
+
+        <form method="POST">
+            {% csrf_token %}
+
+            {{SFO.as_p}}
+            
+            <!--{{SFO.as_ul}}   it gives unorderlist i.e>  before data '.'dot will come
+            {{SFO.as_table}}    it same as normal inline styles all data come with same linne only --> 
+
+            <input type="submit" value="Submit">
+
+        </form>
+
+    </center>
+</body>
+</html>
